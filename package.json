@@ -1,0 +1,43 @@
+{
+  "name": "browser-compatibility-issues",
+  "version": "1.0.0",
+  "description": "浏览器兼容性问题实践",
+  "main": "main.js",
+  "scripts": {
+    "test": "none",
+    "build": "webpack --watch",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuoHaoAt2017/browser-compatibility-issues.git"
+  },
+  "author": "luohao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuoHaoAt2017/browser-compatibility-issues/issues"
+  },
+  "homepage": "https://github.com/LuoHaoAt2017/browser-compatibility-issues#readme",
+  "dependencies": {
+    "antd": "^4.1.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "install": "^0.13.0",
+    "node-sass": "^4.13.1",
+    "npm": "^6.14.4",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

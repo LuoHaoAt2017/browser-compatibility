@@ -1,0 +1,66 @@
+@import '@/assets/scss/rem.scss';
+
+.disable-scroll-bar {
+    .modal-switcher {
+        font-size: px2rem(24px);
+        display: block;
+        width: 100%;
+        height: px2rem(60px);
+        line-height: px2rem(60px);
+        padding: 0 px2rem(15px);
+        box-sizing: border-box;
+    }
+
+    .card-list {
+        margin: 0 px2rem(15px);
+        padding: 0;
+
+        // 修改滚动条样式
+        &::-webkit-scrollbar {
+            width: px2rem(10px);
+            height: px2rem(10px);
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgb(0, 0, 255);
+        }
+        &::-webkit-scrollbar-track {
+            background-color: rgb(0, 255, 0);
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: px2rem(15px) 0;
+            list-style: none;
+            padding: px2rem(15px) 0 px2rem(30px) 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            .poetry {
+                text-align: center;
+                
+                .title {
+                    display: block;
+                    font-size: px2rem(24px);
+                    margin-bottom: px2rem(20px);
+                    font-weight: bold;
+                }
+                .line {
+                    display: block;
+                    font-size: px2rem(20px);
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+}
+
+.preferences-outer {
+    width: 100%;
+
+    .preferences-inner {
+        width: 80%!important;
+        .ant-modal-body {
+            font-size: px2rem(20px);
+            font-weight: lighter;
+            text-align: center;
+        }
+    }
+}

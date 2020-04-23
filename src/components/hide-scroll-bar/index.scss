@@ -1,0 +1,43 @@
+@import '@/assets/scss/rem.scss';
+
+.hide-scroll-bar {
+    height: calc(100vh);
+    position: relative;
+    .card-list {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 px2rem(15px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .card {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: px2rem(15px) 0;
+            list-style: none;
+            padding: px2rem(15px) 0 px2rem(30px) 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            .poetry {
+                text-align: center;
+                
+                .title {
+                    display: block;
+                    font-size: px2rem(24px);
+                    margin-bottom: px2rem(20px);
+                    font-weight: bold;
+                }
+                .line {
+                    display: block;
+                    font-size: px2rem(20px);
+                    font-weight: lighter;
+                }
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-color: transparent transparent;
+        scrollbar-track-color: transparent;
+        -ms-scrollbar-track-color: transparent;
+    }
+}

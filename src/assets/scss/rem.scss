@@ -1,0 +1,5 @@
+@function px2rem($px) {
+    // 基于屏幕宽度是375px的设计稿
+    $rem: 37.5px;
+    @return $px / $rem + rem;
+}
