@@ -1,0 +1,20 @@
+@import '@/assets/scss/rem.scss';
+
+.float-margin {
+    .card-list {
+        .card {
+            text-align: center;
+            list-style: none;
+            display: block;
+            font-size: px2rem(20px);
+            font-weight: lighter;
+
+            width: px2rem(100px);
+            height: px2rem(100px);
+            border: 1px solid #aaa;
+
+            float: left;
+            margin-right: px2rem(10px);;
+        }
+    }
+}
