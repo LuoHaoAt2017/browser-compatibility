@@ -1,0 +1,16 @@
+@import '@/assets/scss/rem.scss';
+.window-size {
+    .box {
+        padding: 50px;
+        margin: 50px;
+        height: 800px;  
+        width: 400px;
+        border: 10px solid #F00;
+        background: rgba(0, 255, 0, 0.5);
+        box-sizing: content-box;
+        overflow-x: scroll;
+        p {
+            width: 500px;
+        }
+    }
+}
