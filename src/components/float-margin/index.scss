@@ -2,6 +2,8 @@
 
 .float-margin {
     .card-list {
+        display: block;
+        overflow: hidden;
         .card {
             text-align: center;
             list-style: none;
@@ -15,6 +17,15 @@
 
             float: left;
             margin-right: px2rem(10px);;
+        }
+    }
+    .image-list {
+        display: block;
+        overflow: hidden;
+        .target {
+            // float: left;
+            display: inline-block;
+            width: px2rem(100px);
         }
     }
 }

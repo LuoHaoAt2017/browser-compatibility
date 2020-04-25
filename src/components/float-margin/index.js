@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import Target from '@/assets/img/target.jpg'
 
 class FloatMargin extends React.Component {
     render() {
@@ -11,6 +12,15 @@ class FloatMargin extends React.Component {
                     <li className='card'>孤帆远影碧空尽</li>
                     <li className='card'>唯见长江天际流</li>
                 </ul>
+                <div className='image-list'>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                    <img src={Target} alt='target' className='target'/>
+                </div>
             </div>
         );
     }
