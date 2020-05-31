@@ -8,12 +8,13 @@ function resolve(pathname) {
 module.exports = {
     mode: 'development',
     entry: {
-        main: resolve('src/main.js')
+        main: ["@babel/polyfill", resolve('src/main.js')]
     },
     output: {
         filename: 'main.bundle.js',
         path: resolve('./dist')
     },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
