@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import '@/utils/resize.js';
-import App from './App.js';
+import Routes from './routes/index';
 import '@/assets/css/reset.css';
 import '@/assets/scss/common.scss';
-import 'antd/dist/antd.css';
-
-ReactDom.render(<App/>, document.getElementById('root'));
+import '@/utils/resize.js';
+ReactDom.render(<Routes/>, document.getElementById('root'));
