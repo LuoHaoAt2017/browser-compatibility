@@ -32,8 +32,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: resolve('public/index.html')
-        })
+            inject: true,
+            filename: 'index.html',
+            template: path.resolve(__dirname, "./public/index.html"),
+            favicon: path.resolve(__dirname, './public/logo.ico')
+        }),
     ],
     resolve: {
         alias: {
